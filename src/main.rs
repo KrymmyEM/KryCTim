@@ -27,6 +27,7 @@ fn timer(hour: u64, mins: u64, seconds: u64, type_timer: u8) -> bool{
 
     match type_timer {
         1 => {
+            thread::sleep(sleep_seconds);
             return true;
         },
         2 => {
