@@ -48,9 +48,6 @@ fn timer(hour: u64, mins: u64, seconds: u64, type_timer: u8) -> bool{
 
 fn main() {
     let type_timer: u8 = input(&mut String::new()).parse().expect("Error parse number");
-    loop {
-        let (hour, mins, seconds) = get_time();
-        timer(hour, mins, seconds, type_timer);
-
-    }
+    let (hour, mins, seconds) = get_time();
+    timer(hour, mins, seconds, type_timer);
 }
