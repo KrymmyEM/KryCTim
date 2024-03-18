@@ -29,7 +29,7 @@ fn timer(hour: u32, mins: u32, seconds: u32){
 fn main() {
     loop {
         let (hour, mins, seconds) = get_time();
-        println!("{hour}, {mins}, {seconds}")
+        timer(hour, mins, seconds)
 
     }
 }
